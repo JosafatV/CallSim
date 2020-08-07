@@ -63,7 +63,7 @@ def main():
     wthreads = []
 
     # input number of workers
-    workers = int(input("Enter the number of workers: "))
+    workers = 5
 
     # read config file for time statistics
     config = configparser.ConfigParser()
@@ -86,7 +86,7 @@ def main():
         wthreads[i].start()
 
     # create calls in a cycle
-    for i in range (0,12):
+    for i in range (0,48):
        createCall(avgCalls, stdCalls)
        time.sleep(1)
 

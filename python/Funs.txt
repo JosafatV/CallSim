@@ -1,0 +1,18 @@
+def processCall(averageTime, stdDev):
+    randomizer = randint(1, 2*stdDev) - stdDev
+    time.sleep(averageTime + randomizer)
+
+def rest(average, stdDev):
+    time.sleep(restTime)
+
+def createCall(avgCalls):
+    int call_counter = 0
+    for i in range (1, avgCalls):
+        call(call_counter, 
+        allCalls.append
+
+def minion () {
+    while (True):
+        processCall()
+        print("call processed")
+        rest()
