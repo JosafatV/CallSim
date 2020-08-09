@@ -9,17 +9,22 @@ Call Center Simulation with OpenMPI and Pthreads that aims to measure the improv
 
 Compile the file with 
 ```
-mpicc saxpi_mpi.c -o saxpi_mpi -fopenmp
+mpicc callsim.c -o callSim -pthread -fopenmp
 ```
 Copy the executable to /mirror
 ```
-sudo cp saxpy_mpi.c /mirror/saxpy_mpi.c
+sudo cp callSim /mirror/callSim
 ```
 	
 Execute the file with 
 ```
-mpiexec -n 8 -f machinefile ./saxpi_mpi
-```	
+mpiexec -n 8 -f machinefile ./callSim
+```
+
 - -n 8 defines the amount of processes
 - -f machinefiles defines the addresses for the nodes and the split of the processes
 	
+You can also run make to compile and copy the executable file
+```
+make
+```
