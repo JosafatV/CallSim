@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
 
 // ===================== HOST PROCESS ===================== //
 	if (my_id == root_process) {
-		int num_rows = 10;
+		int num_rows = 22;
 
 		// initialize the arrays (move to parallel function)
 		for(i = 0; i < num_rows; i++) {

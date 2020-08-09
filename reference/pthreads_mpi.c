@@ -28,7 +28,7 @@ int call_counter = 0;
 int next_call = 0;
 int stop_threads = 0;
 call_t allCalls[max_rows];
-call_t rcvCall;
+int rcvCall;
 pthread_t allWorkers[max_rows];
 
 int main(int argc, char **argv) {

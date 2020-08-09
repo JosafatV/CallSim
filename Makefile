@@ -3,12 +3,12 @@ EX = mpiexec
 CP = cp
 DT = /mirror
 
-FLAGS = -pthread
+FLAGS = -pthread -fopenmp
 
-SRC_P = callt_mpi.c
-EXE_P = callt
+SRC_P = callsim.c
+EXE_P = callSim
 
 
 test:
 		$(CC) $(SRC_P) -o $(EXE_P) $(FLAGS)
-		mv $(EXE_P) $(DT)
+		sudo $(CP) $(EXE_P) $(DT)
